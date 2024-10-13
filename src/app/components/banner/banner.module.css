@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Medium.woff2') format('woff2'),
+        url('Poppins-Medium.woff') format('woff');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('DancingScript-Regular.woff2') format('woff2'),
+        url('DancingScript-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #090909;
+    padding: 10% 5%;
+}
+.sub{
+    width: 50%;
+}
+.sub img{
+    width: 100%;
+}
+.sub h1{
+    font-family: 'Poppins';
+    color: #fff;
+    font-size: 48px;
+    text-transform: capitalize;
+}
+.sub span{
+    color: #FF014F;
+    font-family: 'Dancing Script';
+    font-size: 56px;
+}
+
+
+
+@media only screen and (max-width: 980px) {
+    .sub h1{
+        font-size: 36px;
+    }
+    .sub span{
+        font-size: 42px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .main{
+        flex-direction: column;
+        padding: 3%;
+    }
+    .sub{
+        width: 100%;
+        padding: 5%;
+    }
+    .sub h1{
+        text-align: center;
+    }
+}

@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('DancingScript-Regular.woff2') format('woff2'),
+        url('DancingScript-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Medium.woff2') format('woff2'),
+        url('Poppins-Medium.woff') format('woff');
+    font-weight: 600;
+}
+
+.header{
+    background-color: #090909;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 2px solid #fff;
+}
+.subdiv1, .subdiv2{
+    width: 50%;
+}
+
+.subdiv1 h1{
+    font-family: 'Dancing Script';
+    color: #fff;
+    font-size: 48px;
+}
+.subdiv1 h1 span{
+    color: #FF014F;
+}
+.subdiv2 ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.subdiv2 ul a{
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    position: relative;
+    transition: all ease-in 0.2s;
+}
+.subdiv2 ul a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #FF014F;
+    position: absolute;
+    bottom: -10px;
+    transition: all ease-in-out 0.3s;
+}
+.subdiv2 ul a:hover{
+    color: #FF014F;
+    transform: translateY(2px);
+    cursor: pointer;
+}
+.subdiv2 ul a:hover::after{
+    width: 100%;
+}
+.icon i{
+    color: #FF014F;
+    display: none;
+    font-size: 18px;
+    float: right;
+    margin-top: 10px;
+}
+@media only screen and (max-width: 980px) {
+    .icon i{
+        display: block;
+    }
+    .subdiv2 ul a{
+        display: none;
+    }
+}
+@media only screen and (max-width: 767px) {
+    
+    .subdiv1{
+        width: 90%;
+    }
+    .subdiv2{
+        width: 10%;
+    }
+    .subdiv1 h1{
+        font-size: 32px;
+    }
+    .header{
+        padding: 7px 12px;
+    }
+}
