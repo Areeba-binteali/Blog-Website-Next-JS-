@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Medium.woff2') format('woff2'),
+        url('Poppins-Medium.woff') format('woff');
+    font-weight: 600;
+}
+
+
+.singleBlog{
+    width: 30%;
+    margin: 10px;
+    background-color: #fff;
+    padding: 10px;
+    color: #151515;
+    font-family: 'poppins';
+    text-align: left;
+    border-radius: 10px;
+}
+
+
+.singleBlog img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.singleBlog div{
+    margin: 10px;
+}
+
+.singleBlog h3{
+    color: #000;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 15px 0;
+}
+
+.singleBlog p{
+    color: #4d4c4d;
+}
+
+.singleBlog button{
+    color: #FF014F;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 15px 0 0;
+}
+
+.blog1anime{
+    position: relative;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: x-axis 1s forwards 2s ease-in-out;
+}
+.blog2anime{
+    position: relative;
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: y-axis 1s forwards 2s ease-in-out;
+}
+.blog3anime{
+    position: relative;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: x-axis 1s forwards 2s ease-in-out;
+}
+.blog5anime{
+    position: relative;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: y-axis 1s forwards 2s ease-in-out;
+}
+
+
+@keyframes x-axis {
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes y-axis {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width: 991px) {
+    .singleBlog{
+        width: 47%;
+    }   
+}
+
+@media (max-width: 767px) {
+    .singleBlog{
+        width: 100%;
+    }   
+}

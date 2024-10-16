@@ -2,8 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-Medium.woff2') format('woff2'),
+      url('fonts/Poppins-Medium.woff') format('woff');
+  font-weight: 600;
+}
+
 :root {
-  --background: #ffffff;
+  --background: #090909;
   --foreground: #171717;
 }
 
@@ -24,4 +31,20 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+.pagename{
+  color: #fff;
+  font-size: 52px;
+  font-family: 'Poppins';
+}
+
+.container-div{
+  width: 80vw;
+  margin: 0 auto;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
